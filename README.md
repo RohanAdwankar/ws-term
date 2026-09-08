@@ -9,6 +9,8 @@ Running `server.py` on your machine (it's the WS endpoint taking in input) and `
 ```bash
 TOKEN=$(openssl rand -hex 16); echo "$TOKEN"
 uv run server.py --port 8765 --token "$TOKEN"
+```
+```
 ngrok http 8765
 ```
 
